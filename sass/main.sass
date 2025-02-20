@@ -50,7 +50,50 @@ body
 img
 	max-width: 100%
 
+a 
+	text-decoration: none
+
 .img-responsive
 	display: block
 	max-width: 100%
 	height: auto
+
+// btns
+.btn
+	&_simple
+		color: $accent
+		padding: 7px 24px
+		border: 1px solid $accent
+		border-radius: 20px
+		transition: all 0.5s ease
+		&:hover
+			background: $accent
+			color: white 
+// btns
+#header
+	padding-top: 20px
+	.inner_header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		>.logo
+			width: 48px
+			height: 48px
+			display: block
+			>img 
+				width: 100%
+		.right_side_header
+			display: flex
+			align-items: center
+			.mnu_top
+				list-style-type: none
+				>li
+					display: inline-block
+					margin-right: 40px
+					a
+						color: #000
+						transition: color 0.2s ease
+						&:hover
+							color: $accent
+							 
+
