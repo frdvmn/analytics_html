@@ -52,7 +52,8 @@ img
 
 a 
 	text-decoration: none
-
+ul 
+	list-style-type: none
 .img-responsive
 	display: block
 	max-width: 100%
@@ -105,15 +106,54 @@ a
 			display: flex
 			align-items: center
 			.mnu_top
-				list-style-type: none
+				position: relative
+				>.has_sub_menu 
+					&::after
+						width: 8px
+						height: 5px
+						content: ''
+						position: absolute
+						background-image: url("../img/arrow_bottom.svg")
+						background-repeat: no-repeat
+						background-size: cover
+						background-position: center
+						top: 12px
+						right: 24px
+						z-index: -1
+					&:hover>.sub_menu
+						display: block
+						animation: opac 0.4s
+
 				>li
+					position: relative
 					display: inline-block
-					margin-right: 40px
+					z-index: 6
+					>a
+						padding-right: 40px
+						padding-bottom: 20px
+						padding-top: 20px
+					>.sub_menu
+						position: absolute
+						top: 35px
+						background: white
+						box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.050)
+						border-radius: 2px
+						padding: 5px 10px 5px 10px
+						font-size: 14px
+						display: none
+						a
+							display: block
 					a
 						color: #000
 						transition: color 0.2s ease
 						&:hover
 							color: $accent
+
+@keyframes opac
+	0%
+		opacity: 0
+	100%
+		opacity: 1
 
 .main_banner
 	padding-top: 130px

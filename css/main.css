@@ -51,6 +51,9 @@ img {
 a {
   text-decoration: none; }
 
+ul {
+  list-style-type: none; }
+
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -119,10 +122,43 @@ a {
           -ms-flex-align: center;
               align-items: center; }
       #header .inner_header .right_side_header .mnu_top {
-        list-style-type: none; }
+        position: relative; }
+        #header .inner_header .right_side_header .mnu_top > .has_sub_menu::after {
+          width: 8px;
+          height: 5px;
+          content: "";
+          position: absolute;
+          background-image: url("../img/arrow_bottom.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          top: 12px;
+          right: 24px;
+          z-index: -1; }
+        #header .inner_header .right_side_header .mnu_top > .has_sub_menu:hover > .sub_menu {
+          display: block;
+          -webkit-animation: opac 0.4s;
+                  animation: opac 0.4s; }
         #header .inner_header .right_side_header .mnu_top > li {
+          position: relative;
           display: inline-block;
-          margin-right: 40px; }
+          z-index: 6; }
+          #header .inner_header .right_side_header .mnu_top > li > a {
+            padding-right: 40px;
+            padding-bottom: 20px;
+            padding-top: 20px; }
+          #header .inner_header .right_side_header .mnu_top > li > .sub_menu {
+            position: absolute;
+            top: 35px;
+            background: white;
+            -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.05);
+                    box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.05);
+            border-radius: 2px;
+            padding: 5px 10px 5px 10px;
+            font-size: 14px;
+            display: none; }
+            #header .inner_header .right_side_header .mnu_top > li > .sub_menu a {
+              display: block; }
           #header .inner_header .right_side_header .mnu_top > li a {
             color: #000;
             -webkit-transition: color 0.2s ease;
@@ -130,6 +166,17 @@ a {
             #header .inner_header .right_side_header .mnu_top > li a:hover {
               color: #722ED1; }
 
+@-webkit-keyframes opac {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes opac {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .main_banner {
   padding-top: 130px;
   padding-bottom: 200px; }
