@@ -157,4 +157,9 @@ a {
     .main_banner .mb_info .notif p {
       padding-left: 12px; }
     .main_banner .mb_info .notif a {
-      color: #722ED1; }
+      color: #722ED1;
+      border-bottom: 1px solid #F7F1FF;
+      -webkit-transition: border-bottom 0.4s ease;
+      transition: border-bottom 0.4s ease; }
+      .main_banner .mb_info .notif a:hover {
+        border-bottom: 1px solid #722ED1; }
