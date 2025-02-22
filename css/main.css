@@ -154,7 +154,7 @@ ul {
             -webkit-box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.05);
                     box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.05);
             border-radius: 2px;
-            padding: 5px 10px 5px 10px;
+            padding: 6px 12px 6px 12px;
             font-size: 14px;
             display: none; }
             #header .inner_header .right_side_header .mnu_top > li > .sub_menu a {
@@ -179,7 +179,7 @@ ul {
     opacity: 1; } }
 .main_banner {
   padding-top: 130px;
-  padding-bottom: 200px; }
+  padding-bottom: 120px; }
   .main_banner .mb_info > h1 {
     font-size: 48px;
     line-height: 48px;
@@ -190,23 +190,71 @@ ul {
     color: #787B80;
     padding-top: 24px;
     max-width: 420px; }
-  .main_banner .mb_info .notif {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    background: #F7F1FF;
+
+.notif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  background: #F7F1FF;
+  color: #722ED1;
+  padding: 8px 16px;
+  border-radius: 20px; }
+  .notif p {
+    padding-left: 12px; }
+  .notif a {
     color: #722ED1;
-    padding: 8px 16px;
-    border-radius: 20px; }
-    .main_banner .mb_info .notif p {
-      padding-left: 12px; }
-    .main_banner .mb_info .notif a {
-      color: #722ED1;
-      border-bottom: 1px solid #F7F1FF;
-      -webkit-transition: border-bottom 0.4s ease;
-      transition: border-bottom 0.4s ease; }
-      .main_banner .mb_info .notif a:hover {
-        border-bottom: 1px solid #722ED1; }
+    border-bottom: 1px solid #F7F1FF;
+    -webkit-transition: border-bottom 0.4s ease;
+    transition: border-bottom 0.4s ease; }
+    .notif a:hover {
+      border-bottom: 1px solid #722ED1; }
+
+#advantages {
+  padding-top: 100px; }
+  #advantages .notif {
+    margin: 0 auto; }
+  #advantages .advantages_header {
+    text-align: center; }
+    #advantages .advantages_header .title {
+      color: #160637;
+      font-size: 32px;
+      padding-top: 24px;
+      font-weight: 800; }
+    #advantages .advantages_header .describe {
+      color: #8989A2;
+      max-width: 672px;
+      margin: 0 auto;
+      padding-top: 24px; }
+  #advantages .advantages_row {
+    padding-top: 24px; }
+    #advantages .advantages_row .advantages_col > img {
+      display: block;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto; }
+    #advantages .advantages_row .advantages_col > h3 {
+      font-weight: 600;
+      text-align: center;
+      padding-top: 16px; }
+    #advantages .advantages_row .advantages_col > p {
+      color: #8989A2;
+      padding-top: 16px;
+      text-align: center; }
+
+section.information {
+  padding-top: 100px; }
+  section.information .title {
+    color: #160637;
+    font-size: 32px;
+    font-weight: 800;
+    padding-top: 24px;
+    line-height: 1.1; }
+  section.information .descr {
+    color: #8989A2;
+    padding-top: 24px; }

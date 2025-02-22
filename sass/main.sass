@@ -138,7 +138,7 @@ ul
 						background: white
 						box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.050)
 						border-radius: 2px
-						padding: 5px 10px 5px 10px
+						padding: 6px 12px 6px 12px
 						font-size: 14px
 						display: none
 						a
@@ -157,7 +157,7 @@ ul
 
 .main_banner
 	padding-top: 130px
-	padding-bottom: 200px
+	padding-bottom: 120px
 	.mb_info
 		>h1
 			font-size: 48px	
@@ -170,19 +170,64 @@ ul
 			padding-top: 24px
 			max-width: 420px
 
-		.notif 
-			display: inline-flex
-			align-items: center
-			background: $accent_light
-			color: $accent
-			padding: 8px 16px
-			border-radius: 20px
-			p
-				padding-left: 12px
-			a
-				color: $accent
-				border-bottom: 1px solid $accent_light
-				transition: border-bottom 0.4s ease
-				&:hover
-					border-bottom: 1px solid $accent
+.notif 
+	display: flex
+	align-items: center
+	max-width: max-content
+	background: $accent_light
+	color: $accent
+	padding: 8px 16px
+	border-radius: 20px
+	p
+		padding-left: 12px
+	a
+		color: $accent
+		border-bottom: 1px solid $accent_light
+		transition: border-bottom 0.4s ease
+		&:hover
+			border-bottom: 1px solid $accent
 
+#advantages
+	padding-top: 100px
+	.notif
+		margin: 0 auto
+	.advantages_header
+		text-align: center
+		.title
+			color: $accent_dark
+			font-size: 32px
+			padding-top: 24px
+			font-weight: 800
+		.describe
+			color: $gray
+			max-width: 672px
+			margin: 0 auto
+			padding-top: 24px
+	.advantages_row
+		padding-top: 24px
+		.advantages_col
+			>img
+				display: block
+				width: 48px
+				height: 48px
+				margin: 0 auto
+			>h3
+				font-weight: 600
+				text-align: center
+				padding-top: 16px
+			>p
+				color: $gray
+				padding-top: 16px
+				text-align: center
+
+section.information
+	padding-top: 100px
+	.title
+		color: $accent_dark
+		font-size: 32px
+		font-weight: 800
+		padding-top: 24px
+		line-height: 1.1
+	.descr
+		color: $gray
+		padding-top: 24px
