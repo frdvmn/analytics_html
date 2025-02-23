@@ -12,4 +12,17 @@ $(function() {
 		}
 	});
 
+	$(".rev_nav > div").click(function () {
+		const allRevnav = $(".rev_nav > div")
+
+		allRevnav.not($(this)).removeClass("active")
+		$(this).addClass("active")
+		
+		const revItem = $(this).attr("data-revnav")
+		$(`${revItem}`).addClass("active")
+
+		$(".rev_item").not($(`${revItem}`)).removeClass("active")
+				
+	})
+
 });

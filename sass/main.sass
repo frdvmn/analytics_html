@@ -239,6 +239,10 @@ section.information
 	background-position: center
 	background-image: url("../img/bg_reviews.svg")
 	.rev_item
+		display: none
+		animation: opac 1.5s
+		&.active
+			display: block
 		>.rev_cite
 			font-size: 24px
 			color: $accent_dark
@@ -273,6 +277,7 @@ section.information
 			width: 120px
 			filter: grayscale(1)
 			cursor: pointer
+			transition: all 0.4s ease
 			&.active
 				filter: grayscale(0)
 				transform: scale(1.2)
