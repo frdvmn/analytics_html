@@ -12,6 +12,7 @@ $(function() {
 		}
 	});
 
+	/* REVIEWS ACTIVE STATE TOGGLE */
 	$(".rev_nav > div").click(function () {
 		const allRevnav = $(".rev_nav > div")
 
@@ -22,7 +23,8 @@ $(function() {
 		$(`${revItem}`).addClass("active")
 
 		$(".rev_item").not($(`${revItem}`)).removeClass("active")
-				
 	})
+	/* REVIEWS ACTIVE STATE TOGGLE */
+
 
 });
