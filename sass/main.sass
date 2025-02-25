@@ -379,6 +379,73 @@ section.information
 						&:hover
 							border-bottom: 1px solid $accent
 						
-
+#footer
+	padding-top: 60px			
+	padding-bottom: 100px
+	margin-top: 120px
+	background: #FBFCFF
+	.info
+		padding-right: 20px
+		>.descr
+			color: #160637
+			line-height: 20px
+			margin-top: 14px
+		>.socials
+			margin-top: 24px
+			display: flex
+			align-items: center
+			>li
+				margin-right: 12px
+				transition: all 0.5s ease
+				&:hover
+					transform: translateY(-5px)
+			img
+				display: block
+	.mnu_footer_wrapper
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		>.mnu_footer_element
+			margin-right: 40px
+			&:last-child
+				margin-right: 20px
+			>.nav_list
+				>.nav_el
+					display: block
+					>a
+						margin-bottom: 10px
+						color: $accent_dark
+						transition: all 0.4s ease
+						display: block
+						&:hover
+							color: $accent
+	.title
+			color: $accent_dark
+			margin-bottom: 20px
+			font-weight: 800
+			display: block
+	.footer_form
+		>form
+			position: relative
+			>input
+				border: none
+				box-shadow: 0px 0px 6px 3px rgba(0, 0, 0, 0.050)
+				padding-left: 16px
+				padding-top: 12px
+				padding-bottom: 12px
+				padding-right: 36px
+				width: 100%
+				&::placeholder
+					font-family: inherit
+					color: $gray
+			>button
+				position: absolute
+				right: 0
+				top: 11px
+				right: 12px
+				outline: none
+				border: none
+				background: none
+				cursor: pointer
 
 
